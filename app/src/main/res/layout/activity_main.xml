@@ -44,7 +44,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress"
+                    android:id="@+id/eEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -55,7 +55,7 @@
                     android:minHeight="48dp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/etpassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -73,7 +73,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btnsignin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -82,7 +82,7 @@
                     app:cornerRadius="20dp" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/Txtview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Forgot Password?"
@@ -90,7 +90,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btnsignup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
