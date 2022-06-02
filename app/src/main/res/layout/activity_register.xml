@@ -50,7 +50,7 @@
                     android:ems="10"
                     android:hint="Nombre completo"
                     android:inputType="textEmailAddress"
-                    android:text="Nombre Completo"
+                    android:minHeight="48dp"
                     android:textColor="#BCB3B3"
                     android:textColorHighlight="#151414" />
 
@@ -63,7 +63,7 @@
                     android:ems="10"
                     android:hint="Correo"
                     android:inputType="textEmailAddress"
-                    android:text="Correo"
+                    android:minHeight="48dp"
                     android:textColor="#BCB3B3"
                     android:textColorHighlight="#0C0C0C" />
 
@@ -76,11 +76,11 @@
                     android:ems="10"
                     android:hint="Contraseña"
                     android:inputType="textPassword"
-                    android:text="Contraseña"
+                    android:minHeight="48dp"
                     android:textColor="#BCB3B3" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/etboton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"

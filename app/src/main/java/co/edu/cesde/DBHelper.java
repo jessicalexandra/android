@@ -7,22 +7,23 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
-    public static final int DATABASE_VERSION=1;
+    public static final int DATABASE_VERSION=2;
     public static final String  DATABASE_NAME="cesdeShop";
+
     public DBHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE users(id int primary key ," +
+        db.execSQL("CREATE TABLE users(id INTEGER PRIMARY KEY AUTOINCREMENT ," +
                 "name VARCHAR(50),email VARCHAR(50)," +
-                "identification int ,password VARCHAR (16))");
+                "password VARCHAR (16))");
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        SQLiteDatabase.execSQL("DROP TABLE IF EXISTS "+DATABASE_NAME);
+    public  void onUpgrade(SQLiteDatabase db, int i, int i1) {
+        db.execSQL("DROP TABLE IF EXISTS users");
         onCreate(db);
     }
 }
